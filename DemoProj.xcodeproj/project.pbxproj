@@ -11,6 +11,9 @@
 		C3A81EA32A42ACA000F296F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A81EA22A42ACA000F296F5 /* ContentView.swift */; };
 		C3A81EA52A42ACA100F296F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3A81EA42A42ACA100F296F5 /* Assets.xcassets */; };
 		C3A81EA92A42ACA100F296F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3A81EA82A42ACA100F296F5 /* Preview Assets.xcassets */; };
+		C3A81EB02A42ADA300F296F5 /* CaliforniaTest.json in Resources */ = {isa = PBXBuildFile; fileRef = C3A81EAF2A42ADA300F296F5 /* CaliforniaTest.json */; };
+		C3A81EB42A42ADE000F296F5 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A81EB32A42ADE000F296F5 /* Test.swift */; };
+		C3A81EB72A42AEE200F296F5 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A81EB62A42AEE200F296F5 /* Decoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		C3A81EA42A42ACA100F296F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3A81EA62A42ACA100F296F5 /* DemoProj.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoProj.entitlements; sourceTree = "<group>"; };
 		C3A81EA82A42ACA100F296F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C3A81EAF2A42ADA300F296F5 /* CaliforniaTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CaliforniaTest.json; sourceTree = "<group>"; };
+		C3A81EB32A42ADE000F296F5 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		C3A81EB62A42AEE200F296F5 /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +58,10 @@
 		C3A81E9F2A42ACA000F296F5 /* DemoProj */ = {
 			isa = PBXGroup;
 			children = (
-				C3A81EA02A42ACA000F296F5 /* DemoProjApp.swift */,
-				C3A81EA22A42ACA000F296F5 /* ContentView.swift */,
-				C3A81EA42A42ACA100F296F5 /* Assets.xcassets */,
-				C3A81EA62A42ACA100F296F5 /* DemoProj.entitlements */,
-				C3A81EA72A42ACA100F296F5 /* Preview Content */,
+				C3A81EB92A42B39900F296F5 /* View */,
+				C3A81EB82A42B38500F296F5 /* Supporting Files */,
+				C3A81EB52A42AEC300F296F5 /* Service */,
+				C3A81EB22A42ADBB00F296F5 /* Model */,
 			);
 			path = DemoProj;
 			sourceTree = "<group>";
@@ -67,6 +72,50 @@
 				C3A81EA82A42ACA100F296F5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C3A81EB12A42ADAC00F296F5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C3A81EAF2A42ADA300F296F5 /* CaliforniaTest.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C3A81EB22A42ADBB00F296F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3A81EB12A42ADAC00F296F5 /* Data */,
+				C3A81EB32A42ADE000F296F5 /* Test.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C3A81EB52A42AEC300F296F5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C3A81EB62A42AEE200F296F5 /* Decoder.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C3A81EB82A42B38500F296F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3A81EA72A42ACA100F296F5 /* Preview Content */,
+				C3A81EA62A42ACA100F296F5 /* DemoProj.entitlements */,
+				C3A81EA42A42ACA100F296F5 /* Assets.xcassets */,
+				C3A81EA02A42ACA000F296F5 /* DemoProjApp.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3A81EB92A42B39900F296F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3A81EA22A42ACA000F296F5 /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +178,7 @@
 			files = (
 				C3A81EA92A42ACA100F296F5 /* Preview Assets.xcassets in Resources */,
 				C3A81EA52A42ACA100F296F5 /* Assets.xcassets in Resources */,
+				C3A81EB02A42ADA300F296F5 /* CaliforniaTest.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +191,8 @@
 			files = (
 				C3A81EA32A42ACA000F296F5 /* ContentView.swift in Sources */,
 				C3A81EA12A42ACA000F296F5 /* DemoProjApp.swift in Sources */,
+				C3A81EB72A42AEE200F296F5 /* Decoder.swift in Sources */,
+				C3A81EB42A42ADE000F296F5 /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,10 +318,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = DemoProj/DemoProj.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "DemoProj/Supporting Files/DemoProj.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DemoProj/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DemoProj/Supporting Files/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -302,10 +354,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = DemoProj/DemoProj.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "DemoProj/Supporting Files/DemoProj.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DemoProj/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DemoProj/Supporting Files/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
