@@ -11,9 +11,7 @@ import Observation
 
 @Model
 final class Test: Decodable, Identifiable {
-    var id: Int = 0
-    
-//    @Attribute(.unique)
+    var id: Int
     var index: Int
     
     @Transient
